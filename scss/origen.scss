@@ -1,0 +1,461 @@
+/* RESET CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+//VARIABLES GLOBALES//
+$color_general: white;
+$color_sec: #31afb4;
+$fuente: 'Roboto Condensed'; 
+$h1_size: 26px;
+$h2_size: 22px; 
+$h3_size: 18px;
+$a_size: 18px;
+$p_size: 18px;
+$ancho: 100%;
+
+/* INDEX-GRIDS */
+
+#contenedor{
+    display: grid;
+    grid-template-areas: "box1 box1 box1"
+                         "box2 box2 box2"
+                         "box3 box3 box3"
+                         "box4 box4 box4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45vh 40vh 10vh 15vh;            
+}
+
+#box1{
+    grid-area: box1;
+    background-color: $color_sec;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    img{
+        align-content: center;
+    }
+}
+
+#box2{
+    grid-area: box2;
+    width: $ancho;
+    background-color: $color_sec;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        li{
+            width: $ancho / 2;
+            margin-top: 5px;
+            background: linear-gradient(to right, #4ca2cd, #67b26f);
+            border: 2px solid #abdddd;
+            border-radius: 3px;
+            border-style: outset;
+            flex: 50%;
+            a{
+                font-family: $fuente;
+                font-size: $p_size - 4px;
+                font-weight: bold;
+                text-decoration: none;
+                color:$color_general;
+            }
+        }
+    }
+}
+
+#box3{
+    grid-area: box3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_sec;
+}
+#box4{
+    grid-area: box4;
+    background-color: $color_sec ;
+    p{
+        margin-top: 10px;
+        font-family: $fuente;
+        font-size: $p_size - 6px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/* SECCION QUIENES SOMOS-GRIDS */
+#contenedor1{
+    display: grid;
+    grid-template-areas: "box5 box5 box5"
+                         "box6 box6 box6"
+                         "box7 box7 box7"
+                         "box8 box8 box8"
+                         "box9 box9 box9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 51vh 40vh 10vh 90vh 15vh;
+}
+#box5{
+    grid-area: box5;
+    background-color: $color_sec;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    img{
+        align-content: center;
+    }
+}
+#box6{
+    grid-area: box6;
+    width: $ancho;
+    background-color: $color_sec;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        li{
+            width: $ancho / 2;
+            margin-top: 5px;
+            background: linear-gradient(to right, #4ca2cd, #67b26f);
+            border: 2px solid #abdddd;
+            border-radius: 3px;
+            border-style: outset;
+            flex: 50%;
+            a{
+                font-family: $fuente;
+                font-size: $p_size - 4px;
+                font-weight: bold;
+                text-decoration: none;
+                color:$color_general;
+            }
+        }
+    }
+}
+#box7{
+    grid-area: box7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_sec;
+}
+#box8{
+    grid-area: box8;
+    background-color: #78ffd6;
+    font-family: $fuente;
+    color: #1b1f1ff3;
+    h1{
+        font-size: $h1_size - 8px;
+        text-align: center;
+        margin: 5px;
+    }
+    h2{
+        font-size: $h2_size - 6px;
+        margin: 5px;
+    }
+    p{
+        font-size: $p_size - 6px;
+    }
+}
+
+#box9{
+    grid-area: box9;
+    background-color: $color_sec;
+    p{
+        margin-top: 10px;
+        font-family: $fuente;
+        font-size: $p_size - 6px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/* COMPROMISO ECOLOGICO - GRIDS */
+
+#contenedor2{
+    display: grid;
+    grid-template-areas: "caja1 caja1 caja1"
+                         "caja2 caja2 caja2"
+                         "caja3 caja3 caja3"
+                         "caja4 caja4 caja4"
+                         "caja5 caja5 caja5";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 51vh 40vh 10vh 40vh 15vh;
+}
+#caja1{
+    grid-area: caja1;
+    background-color: $color_sec;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    img{
+        align-content: center;
+    }
+}
+#caja2{
+    grid-area: caja2;
+    width: $ancho;
+    background-color: $color_sec;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        li{
+            width: $ancho / 2;
+            margin-top: 5px;
+            background: linear-gradient(to right, #4ca2cd, #67b26f);
+            border: 2px solid #abdddd;
+            border-radius: 3px;
+            border-style: outset;
+            flex: 50%;
+            a{
+                font-family: $fuente;
+                font-size: $p_size - 4px;
+                font-weight: bold;
+                text-decoration: none;
+                color:$color_general;
+            }
+        }
+    }
+}
+#caja3{
+    grid-area: caja3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_sec;
+}
+#caja4{
+    grid-area: caja4;
+    background-color: #78ffd6;
+    font-family: $fuente;
+    color: #1b1f1ff3;
+    h1{
+        font-size: $h1_size - 8px;
+        text-align: center;
+        margin: 5px;
+    }
+    p{
+        font-size: $p_size - 6px;
+    }
+}
+#caja5{
+    grid-area: caja5;
+    background-color: $color_sec;
+    p{
+        margin-top: 10px;
+        font-family: $fuente;
+        font-size: $p_size - 6px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+#contenedor3{
+    display: grid;
+    grid-template-areas: "caja6 caja6 caja6"
+                         "caja7 caja7 caja7"
+                         "caja8 caja8 caja8"
+                         "caja9 caja9 caja9"
+                         "caja10 caja10 caja10";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 51vh 40vh 10vh max-content 15vh;
+}
+#caja6{
+    grid-area: caja6;
+    background-color: $color_sec;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    img{
+        align-content: center;
+    }
+}
+#caja7{
+    grid-area: caja7;
+    width: $ancho;
+    background-color: $color_sec;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        li{
+            width: $ancho / 2;
+            margin-top: 5px;
+            background: linear-gradient(to right, #4ca2cd, #67b26f);
+            border: 2px solid #abdddd;
+            border-radius: 3px;
+            border-style: outset;
+            flex: 50%;
+            a{
+                font-family: $fuente;
+                font-size: $p_size - 4px;
+                font-weight: bold;
+                text-decoration: none;
+                color:$color_general;
+            }
+        }
+    }
+}
+#caja8{
+    grid-area: caja8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_sec;
+}
+#carouselExampleCaptions{
+    grid-area: caja9;
+    /*display: flex;
+    flex-direction: column;
+    justify-items: center;
+    .mordillos{
+        width: $ancho;
+        flex: $ancho;
+        height: auto;
+        background-image: url(../Recursos/Proyectos/Mordillos-cel.png);
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-position: top;
+    }*/
+}
+#caja10{
+    grid-area: caja10;
+    background-color: $color_sec;
+    p{
+        margin-top: 10px;
+        font-family: $fuente;
+        font-size: $p_size - 6px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/* CONTACTO GRIDS */
+#contenedor4{
+    display: grid;
+    grid-template-areas: "caja11 caja11 caja11"
+                         "caja12 caja12 caja12"
+                         "caja13 caja13 caja13"
+                         "caja14 caja14 caja14"
+                         "caja15 caja15 caja15";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 51vh 40vh 10vh 100vh 15vh;
+}
+#caja11{
+    grid-area: caja11;
+    background-color: $color_sec;
+    text-align: center;
+    align-content: space-around;
+    justify-content: center;
+    img{
+        align-content: center;
+    }
+}
+#caja12{
+    grid-area: caja12;
+    width: $ancho;
+    background-color: $color_sec;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        li{
+            width: $ancho / 2;
+            margin-top: 5px;
+            background: linear-gradient(to right, #4ca2cd, #67b26f);
+            border: 2px solid #abdddd;
+            border-radius: 3px;
+            border-style: outset;
+            flex: 50%;
+            a{
+                font-family: $fuente;
+                font-size: $p_size - 4px;
+                font-weight: bold;
+                text-decoration: none;
+                color:$color_general;
+            }
+        }
+    }
+}
+#caja13{
+    grid-area: caja13;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color_sec;
+}
+#caja14{
+    grid-area: caja14;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: $fuente;
+    .datos{
+        width: $ancho;
+        padding: 5px;
+        height: 50vh;
+        font-weight: bold;
+        align-content: space-around;
+        label{
+            padding: 10px;
+            font-size: $p_size;
+            font-weight: normal;
+            flex: left;
+        }
+        input{
+            padding: 5px;
+            font-size: $p_size;
+            font-weight: normal;
+            flex: right;
+        }
+    }
+    .consulta{
+        width: $ancho;
+        padding: 5px;
+        height: 50vh;
+        font-weight: bold;
+        p{
+            margin-left: 30px;
+            font-size: $p_size - 4px;
+            font-weight: normal;
+            text-align: left;
+        }
+        textarea{
+            width: $ancho;
+            font-size: $a_size - 6px;
+        }
+        .form-check{
+            font-weight: normal;
+        }
+        input{
+            margin-top: 10px;
+            font-size: $p_size - 4px;
+            font-weight: normal;
+            text-align: center;
+        }
+    } 
+    
+}
+#caja15{
+    grid-area: caja15;
+    background-color: $color_sec;
+    p{
+        margin-top: 10px;
+        font-family: $fuente;
+        font-size: $p_size - 6px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
